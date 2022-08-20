@@ -1,0 +1,16 @@
+a:2:{s:8:"username";s:5:"admin";s:8:"password";s:7:"Meow123";}
+a:2:{s:8:"username";s:5:"guest";s:8:"password";s:7:"Guest01";}
+a:2:{s:8:"username";s:5:"teszt";s:8:"password";s:7:"Teszt01";}
+a:2:{s:8:"username";s:6:"teszt9";s:8:"password";s:7:"Teszt01";}
+a:2:{s:8:"username";s:6:"teszt8";s:8:"password";s:7:"Teszt01";}
+a:2:{s:8:"username";s:7:"teszt99";s:8:"password";s:7:"Teszt01";}
+a:2:{s:8:"username";s:8:"teszt899";s:8:"password";s:3:"asd";}
+a:2:{s:8:"username";s:7:"asdwasd";s:8:"password";s:1:"1";}
+a:2:{s:8:"username";s:11:"teszt898989";s:8:"password";s:1:"a";}
+a:2:{s:8:"username";s:12:"teszt8989891";s:8:"password";s:1:"a";}
+a:2:{s:8:"username";s:13:"teszt89898911";s:8:"password";s:1:"a";}
+a:2:{s:8:"username";s:13:"teszt89898912";s:8:"password";s:1:"a";}
+a:2:{s:8:"username";s:12:"teszt8989891";s:8:"password";s:3:"asd";}
+a:2:{s:8:"username";s:5:"admin";s:8:"password";s:3:"asd";}
+a:2:{s:8:"username";s:1:"a";s:8:"password";s:1:"a";}
+a:2:{s:8:"username";s:1:"u";s:8:"password";s:1:"u";}

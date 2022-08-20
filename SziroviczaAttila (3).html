@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8">
+    <title>Webtervezés 2020 - II. mérföldkő</title>
+    <style>
+      body {
+        font-family: "Segoe UI",Arial,sans-serif;
+        background-color: #fcfcfc;
+        font-size:16px;
+        padding-bottom:50px;
+      }
+      table,td,th {
+        border-collapse: collapse;
+      }
+      th,td {
+        border: 1px solid #000000;
+        padding:5px;
+      }
+      table {
+        margin:10px;
+      }
+      td:first-child {
+        /*font-weight:bold;*/
+        vertical-align: top;
+      }
+      .stfill {
+        font-weight:bold;
+        color:#DD4132;
+      }
+      .sum {
+        border-top:2px solid #000000;
+      }
+      .sum td {
+        font-weight:bold;
+      }
+      .task {
+        /*font-weight:bold;*/
+      }
+      .subtask {
+        padding-left:25px;
+      }
+      .note {
+        font-size:12px;
+        display:block;
+      }
+      tr.sum>td:nth-child(2),
+      td:nth-child(3),
+      td:nth-child(4) {
+        text-align: center;
+      }
+      tr.header {
+        border-bottom: 2px solid #000000;
+      }
+      .example {
+        font-style: italic;
+        color:grey;
+      }
+      .kotelezo{ 
+		  color:red; 
+		  font-weight: bold; 
+	   }
+    </style>
+  </head>
+  <body>
+    <h1>Web tervezés - 1 fős projekt <br />
+        II. mérföldkő követelmények</h1>
+    <div>
+      <h2>Általános elvárások</h2>
+      <ul>
+        <li>Az elfogadáshoz egy XAMPP környezetben futó webalkalmazást (PHP) kell elkészíteni, melynek tükröznie kell az I. mérföldkőben megadott témát.</li>
+        <li>PHP keretrendszerek használatára nincs lehetőség.</li>
+        <li>Az elkészített feladatot egy zip fájlban kell feltölteni CooSpace-re a követelményekben megfogalmazott határidőig.</li>
+        <li>A zip fájlnak tartalmaznia kell egy mappát, melynek neve a hallgató Neptun-kódja (kis betűvel). A projekt fájljait ebben kell elhelyezni.</li>
+        <li>Kicsomagolás után a projekt mappáját (Neptun-kóddal megegyező mappa név) a XAMPP htdocs mappájába másolva, mindenféle konfiguráció nélkül a weboldalnak működnie kell a <em>localhost/[neptun]</em> url-t megnyitva böngészőben, ahol az [neptun] a hallgató Neptun-kódját jelenti (szintén kis betűvel). (A portszámtól eltekintve.)</li>
+        <li>A fenti elvárások a pontozásban "Formai követelmények" néven szerepelnek.</li>
+        <li>Az <span class="kotelezo">
+            1, 2, 3.2, 4, 4.1, 4.2, 4.3, 4.4, 5, 5.1, 5.2 </span>
+            sorszámú követelmények teljesítése az elégséges megszerzéséhez kötelező, a projekt más részével ki nem váltható!</li>
+        <li>Ezen dokumentumot kitöltve mellékelni kell a beadott zip fájlban.</li>
+        <li>Amennyiben az I. mérföldkő nem került beadásra, az I. mérföldő követelményeit tartalmazó HTML fájlt kitöltve is mellékelni kell.</li>
+        <li class="stfill">Beadás előtt ajánlott ellenőrizni a kabinetben, hogy működik-e, mert a nem működő megoldások nem kerülnek pontozásra!</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Hallgató adatai</h2>
+      <ul>
+        <li>Név: <span class="stfill">Szirovicza Attila</span></li>
+        <li>Neptun-kód: <span class="stfill">M60EVT</span></li>
+        <li>Szak, évfolyam: <span class="stfill">PTI 2019</span></li>
+        <li>E-mail cím: <span class="stfill">szirovicza0attila@gmail.com</span></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Pontozás</h2>
+      <p>
+        Ezt a részt az oktató tölti ki.
+      </p>
+      <table>
+        <tr class="header">
+          <th>
+
+          </th>
+          <th>
+            Részfeladat
+          </th>
+          <th>
+            Szerezhető pontszám
+          </th>
+          <th>
+            Szerzett pontszám
+          </th>
+          <th>
+            Megjegyzés
+          </th>
+        </tr>
+        <tr class="kotelezo">
+          <td>
+            1
+          </td>
+          <td>
+            Formai követelmények
+          </td>
+          <td>1</td><td>1</td><td></td>
+        </tr>
+        <tr class="kotelezo">
+          <td>
+            2
+          </td>
+          <td class="task">
+            Szabványos dinamikusan generált HTML
+            <div class="note">Hibás oldalanként 1 pont levonás. 
+                              Minimum 0 pont.</div>
+							<a href="main.php">Főoldal</a> <a href="login.php">belépés</a> <a href="logout.php">kilépés</a> <a href="rendeles.php">rendeles</a> <a href="reg.php">regisztáció</a> <a href="index.php">kezdőlap</a>
+							<p>dinamikus dolgok a login.php, a main.php, rendeles.php ben vannak</p>
+          </td>
+          <td>3</td><td>3</td><td></td>
+        </tr>
+        <tr class="kotelezo">
+          <td>
+            3
+          </td>
+          <td class="task" colspan="4">
+            Menü
+          </td>
+        </tr>
+        <tr>
+          <td>
+            3.1
+          </td>
+          <td class="subtask">
+            <i>Az éppen megnyitott menüpont ki van emelve</i>
+			<a href="main.php">Főoldal</a> <a href="login.php">belépés</a> <a href="logout.php">kilépés</a> <a href="rendeles.php">rendeles</a> <a href="reg.php">regisztáció</a> <a href="index.php">kezdőlap</a>
+          </td>
+          <td><i>2</i></td><td>2</td><td></td>
+        </tr>
+        <tr class="kotelezo">
+          <td>
+            3.2
+          </td>
+          <td class="subtask">
+            Hiba nélkül működő navigáció
+			<a href="main.php">Főoldal</a> <a href="login.php">belépés</a> <a href="logout.php">kilépés</a> <a href="rendeles.php">rendeles</a> <a href="reg.php">regisztáció</a> <a href="index.php">kezdőlap</a>
+          </td>
+          <td>1</td><td>1</td><td></td>
+        </tr>
+        <tr class="kotelezo">
+          <td>
+            4
+          </td>
+          <td class="task" colspan="4">
+            Felhasználó kezelés
+          </td>
+        </tr>
+        <tr class="kotelezo">
+          <td>
+            4.1
+          </td>
+          <td class="subtask">
+            Menetkövetés
+            <div class="note">Szabályos session használat.</div>
+			<a href="main.php">Főoldal</a> <a href="login.php">belépés</a> <a href="logout.php">kilépés</a> <a href="rendeles.php">rendeles</a> <a href="reg.php">regisztáció</a> <a href="index.php">kezdőlap</a>
+			<p>megszüntetve a logout.php-ban van(kilépés)</p>
+          </td>
+          <td>1</td><td>1</td><td></td>
+        </tr>
+        <tr class="kotelezo">
+          <td>
+            4.2
+          </td>
+          <td class="subtask">
+            <a href="login.php">Bejelentkezés</a>
+            <div class="note">- hibás adatok esetén hibaüzenet</div>
+            <div class="note">- helyes adatok esetén működő bejelentkezés</div>
+          </td>
+          <td>2</td><td>2</td><td></td>
+        </tr>
+        <tr class="kotelezo">
+          <td>
+            4.3
+          </td>
+          <td class="subtask">
+            Belépett felhasználó ellenőrzése
+			<a href="login.php">belépés</a>
+            <div class="note">Amennyiben egy nem belépett felhasználó olyan oldalt <br> nyit meg, amit csak belépett felhasználó tud elérni, <br> irányítson át a bejelentkezéshez.</div>
+			A főoldal eléréséhez be kell jelentkezni csak azután lehet hozzéférni a bejelentkezésen keresztül. A navigációs menü mindig ide irányít 
+          </td>
+          <td>2</td><td>2</td><td></td>
+        </tr>
+        <tr class="kotelezo">
+          <td>
+            4.4
+          </td>
+          <td class="subtask">
+            <a href="logout.php">Kijelentkezés</a>
+          </td>
+          <td>1</td><td>1</td><td></td>
+        </tr>
+        <tr class="kotelezo">
+          <td>
+            5
+          </td>
+          <td class="task" colspan="4">
+            <a href="reg.php">Regisztáció</a>
+          </td>
+        </tr>
+        <tr class="kotelezo">
+          <td>
+            5.1
+          </td>
+          <td class="subtask">
+            Működő regisztráció
+          </td>
+          <td>1</td><td>1</td><td></td>
+        </tr>
+        <tr class="kotelezo">
+          <td>
+            5.2
+          </td>
+          <td class="subtask">
+            Űrlap ellenőrzés PHP oldalon
+            <div class="note">- nem kitöltött űrlap ellenőrzés: 2p</div>
+            <div class="note">- foglalt-e a felhasználónév: 2p</div>
+            <div class="note">- jelszó ismétlő mező ellenőrzés: 1p</div>
+          </td>
+          <td>5</td><td>3</td><td>nincs ellenőrizve: foglalt-e a felhasználónév</td>
+        </tr>
+        <tr>
+          <td>
+            6
+          </td>
+          <td class="task" colspan="4">
+            PHP
+          </td>
+        </tr>
+        <tr>
+          <td>
+            6.1
+          </td>
+          <td class="subtask">
+			<i>Technikai elemek</i>
+            <div class="note">A szabad témaválasztás miatt a pontozás a
+              <br /> megvalósítás összetettsége alapján történik.</div>            A szabad témaválasztás miatt a pontozás <br> a megvalósítás összetettsége alapján történik.
+            <div class="note">Pontot ér:</div>
+            <div class="note">- <a href="login.php">ciklus használat (max 2x): 1-4p</a></div>
+            <div class="note">- űrlapos adatkezelés megvalósítás (max 2x): 1-6p<a href="rendeles.php">rendeles</a> <a href="reg.php">regisztáció</a></div>
+            <div class="note">- összetett számítás: 1-3p<a href="main.php">Főoldal</a></div>
+            <div class="note">- fájlkezelés: 1-8p<a href="main.php">Főoldal</a> <a href="login.php">belépés</a> <a href="rendeles.php">rendeles</a> <a href="reg.php">regisztáció</a> <a href="index.php">kezdőlap</a></div>
+            <div class="note">- <a href="main.php">összetett adatok tárolása session-ben: 1-8p</a></div>
+            <div class="note">- belépéshez kötött funkció: 1-3p<a href="main.php">Főoldal</a> <a href="login.php">belépés</a></div>
+          </td>
+          <td><i>32</i></td><td>32</td><td></td>
+        </tr>
+        <tr>
+          <td>
+            7
+          </td>
+          <td class="task">
+            <i>Megvalósítás minősége és átláthatósága</i>
+            <div class="note">Az alábbiakból lehet összeszedni:</div>
+            <div class="note">- kód ismétlések elkerülése: 1-4p</div>
+            <div class="note">- logikusan, fájlokba szervezett kód: 2p</div>
+          </td>
+          <td><i>16</i></td><td>6</td><td>függvények használata (saját nincs) 2p, logikusan, fájlokba szervezett kód 2p, CSS betöltése külön fájlból 2p</td>
+        </tr>
+        <tr class="sum">
+          <td colspan="2">Összpontszám:</td>
+          <td>67</td>
+          <td>55</td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <h2>Megjegyzés</h2>
+      <p>A hallgató opcionális megjegyzése a beadott feladathoz.</p>
+      <p>
+         <span class="stfill">[Hallgató tölti ki...]</span>
+      </p>
+    </div>
+    <p> Közzétéve: 2020. 02. 04. </p>
+  </body>
+</html>
